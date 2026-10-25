@@ -1,0 +1,114 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "capacitor-swift-pm",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/ionic-team/capacitor-swift-pm.git",
+          "name" : "capacitor-swift-pm"
+        },
+        "path" : "/Users/hallo/Downloads/project 2/ios/App/build/SourcePackages/artifacts/capacitor-swift-pm/Capacitor/Capacitor.xcframework",
+        "source" : {
+          "checksum" : "c7a596c21222fcc28a16655ef33062d11fa384d0c5e27c951e2f1a29870c0658",
+          "type" : "remote",
+          "url" : "https://github.com/ionic-team/capacitor-swift-pm/releases/download/7.6.9/Capacitor.xcframework.zip"
+        },
+        "targetName" : "Capacitor"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "capacitor-swift-pm",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/ionic-team/capacitor-swift-pm.git",
+          "name" : "capacitor-swift-pm"
+        },
+        "path" : "/Users/hallo/Downloads/project 2/ios/App/build/SourcePackages/artifacts/capacitor-swift-pm/Cordova/Cordova.xcframework",
+        "source" : {
+          "checksum" : "ebd6049f93e1ca848f23fd2056147b748e28b334e4db00e0131e76ad67a33574",
+          "type" : "remote",
+          "url" : "https://github.com/ionic-team/capacitor-swift-pm/releases/download/7.6.9/Cordova.xcframework.zip"
+        },
+        "targetName" : "Cordova"
+      }
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "app",
+          "kind" : "fileSystem",
+          "location" : "/Users/hallo/Downloads/project 2/node_modules/@capacitor/app",
+          "name" : "CapacitorApp"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/hallo/Downloads/project 2/node_modules/@capacitor/app"
+        },
+        "subpath" : "app"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "capacitor-swift-pm",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/ionic-team/capacitor-swift-pm.git",
+          "name" : "capacitor-swift-pm"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "ac5dacb8f1f5abf4b8297b34cfc3860d3f9202df",
+            "version" : "7.6.9"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "capacitor-swift-pm"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "capapp-spm",
+          "kind" : "fileSystem",
+          "location" : "/Users/hallo/Downloads/project 2/ios/App/CapApp-SPM",
+          "name" : "CapApp-SPM"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/hallo/Downloads/project 2/ios/App/CapApp-SPM"
+        },
+        "subpath" : "capapp-spm"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "haptics",
+          "kind" : "fileSystem",
+          "location" : "/Users/hallo/Downloads/project 2/node_modules/@capacitor/haptics",
+          "name" : "CapacitorHaptics"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/hallo/Downloads/project 2/node_modules/@capacitor/haptics"
+        },
+        "subpath" : "haptics"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "localnotifications",
+          "kind" : "fileSystem",
+          "location" : "/Users/hallo/Downloads/project 2/ios/App/LocalNotifications",
+          "name" : "CapacitorLocalNotifications"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/hallo/Downloads/project 2/ios/App/LocalNotifications"
+        },
+        "subpath" : "localnotifications"
+      }
+    ]
+  },
+  "version" : 6
+}

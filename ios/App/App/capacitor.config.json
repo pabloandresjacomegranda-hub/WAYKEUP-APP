@@ -1,0 +1,11 @@
+{
+	"appId": "com.waykeup.app",
+	"appName": "WaykeUp",
+	"webDir": "dist",
+	"bundledWebRuntime": false,
+	"packageClassList": [
+		"AppPlugin",
+		"HapticsPlugin",
+		"LocalNotificationsPlugin"
+	]
+}
