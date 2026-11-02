@@ -16,9 +16,6 @@ workflows:
       - name: Sync Capacitor iOS
         script: |
           npx cap sync ios
-      - name: CocoaPods installation
-        script: |
-          cd ios/App && pod install
       - name: Build iOS app
         script: |
           xcodebuild build -workspace ios/App/App.xcworkspace -scheme App -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
