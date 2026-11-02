@@ -6,6 +6,9 @@ workflows:
     environment:
       node: 22
       xcode: latest
+      ios_signing:
+        distribution_type: development
+        bundle_identifier: com.waykeup.app
     scripts:
       - name: Install dependencies
         script: |
@@ -16,9 +19,12 @@ workflows:
       - name: Sync Capacitor iOS
         script: |
           npx cap sync ios
+      - name: Set up code signing
+        script: |
+          xcode-project use-profiles
       - name: Build iOS app
         script: |
-          xcodebuild build -workspace ios/App/App.xcworkspace -scheme App -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+          xcodebuild build -workspace ios/App/App.xcworkspace -scheme App -configuration Release
     artifacts:
       - ios/App/build/Release-iphoneos/*.app
       - build/ios/ipa/*.ipa
